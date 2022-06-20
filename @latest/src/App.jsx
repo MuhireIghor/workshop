@@ -1,16 +1,26 @@
 import React from 'react';
-import Home from './COMPONENTS/Home'
+import About from './About';
+import Body from './Body';
+import Navbar from './Navbar';
+import './App.css';
+import Testimonials from './Testimonials';
+function App(){
+    return(
 
-import './App.css'
 
-function App() {
+        <div className='flex flex-col space-y-12  w-screen'>
+            <Navbar rout="Home"/>
+            <Body />
+            <About />
+            <Testimonials title = "Testimonials" />
+    
 
 
-  return (
-    <div className="App">
-  <Home />
-    </div>
-  )
+
+
+
+        </div>
+        
+    )
 }
-
-export default App
+export default App;

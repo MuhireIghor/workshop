@@ -1,35 +1,110 @@
-import React,{useState} from 'react';
-import {data} from './COMPONENTS/Imageslider';
-import {BsChevronRight,BsChevronLeft} from 'react-icons/bs';
+import React from 'react';
+import{Swiper,SwiperSlide} from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/effect-cube";
+import "./css/styles.css";
+import { EffectCube,Navigation,Pagination,Autoplay,Lazy } from 'swiper';
+import Fade from 'react-reveal/Fade'
+// import Fade from 'react-reveal/Fade'
+
+import {data} from './Imageslider';
+
 console.log(data);
-
-
+const transitionTime = 400;
+const elastic = `transform ${transitionTime}ms cubic-bezier(0.68, -0.55, 0.265, 1.55)`;
+const smooth = `transform ${transitionTime}ms ease`;
 function Body(){
-    const[count,setCount] = useState(0);
-    function backImage(){
-    setCount(slide.no-1)%data.length;
- }
-    function forwardImage(){
-        setCount(slide.no+1)%data.length;
-    }
-    
+  
 
     return(
-        <div className='flex flex-col'>
-            <BsChevronLeft onClick={backImage} />
+        <div className=' flex flex-col justify-center items-center    w-screen h-screen py-2  '>
+  
                     
+                <Swiper className='swiper'  effect={"cube"}
+                
+      
+        
+        cubeEffect={{ 
+        
+          shadow: false,
+          slideShadows: true,
+          shadowOffset: 40,
+          shadowScale: 0.94,
+          autoplay:true,
+          
+        }}
+        autoplay={{
 
-                        <div className=''>
-                            <img src={slide.no} alt="" />
+          delay:6000,
+          disableOnInteraction:true,
+          
+        }
+}
+        pagination={{
+          dynamicBullets:true
+        }}
+        modules={[EffectCube, Pagination,Autoplay]}
+        loop={true}
 
-                        </div>
-                        
+        >
+        
+              
+
+        
+                <SwiperSlide  className='swiper-slide bg-[url("images/pic.jpg")] bg-contain bg-no-repeat bg-center bg-cover'>
+                  <Fade left duration={3000}>
+
+                    <div className="text flex flex-col" >
+
+                    <p className='text-white text-3xl font-semibold'>Hope Shop stores</p>
+                    <p className='text-white text-2xl font-lightweight'>Kwambara Neza kwawe Ni Ishema Ryacu</p>
+                    </div>
+
+  
+                  </Fade>
+                </SwiperSlide>
+                
+                <SwiperSlide className='swipper-slide bg-[url("images/Ppic.jpg")] object-scale-down bg-center bg-contain'>
+
                     
-            <BsChevronRight onClick={forwardImage} />
-                    
-                )
+   <Fade right duration={10000}>
 
+                  <div className="text flex flex-col w-1/2" >
+
+                  <p className='text-white text-3xl font-semibold'> Welcome on Hope Shop stores</p>
+                  <p className='text-white text-2xl font-lightweight'>Get all dream Clothes and at a low Price only at HOPE STORES</p>
+                  </div>
+                  </Fade>
+                </SwiperSlide>
             
+                <SwiperSlide className='swipper-slide bg-[url("images/pic3.jpg")]'>
+                  <Fade duration={60000} >
+
+                <div className="text flex flex-col w-1/2" >
+
+<p className='text-white text-3xl font-semibold'> Get Started with Hope Shop stores</p>
+<p className='text-white text-2xl font-lightweight'>Get started with out App</p>
+
+<button></button>
+</div>
+                  </Fade>
+  
+                </SwiperSlide>
+              
+           
+          
+            
+            
+        
+            
+                </Swiper>
+            
+
+
+            <div className="about">
+
+            </div>
 
 
 
@@ -37,5 +112,5 @@ function Body(){
         </div>
     
     )
-}
+      }
 export default Body;

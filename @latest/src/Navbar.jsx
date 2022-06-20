@@ -15,7 +15,7 @@ function Navbar({rout}){
                     return(
                         <div>
                             
-                            <li className={list.value === rout ? activeClass:inactiveclass}>{list.value}</li>
+                            <li key={index} className={list.value === rout ? activeClass:inactiveclass}>{list.value}</li>
 
 
                         </div>
