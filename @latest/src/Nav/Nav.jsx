@@ -6,7 +6,7 @@ import './Nav.css';
 const Nav = () => {
 	return (
 	
-<div className='flex flex-row justify-center items-center w-screen h-16  '>
+<div className='flex flex-row justify-center items-center w-screen h-16 fixed bg-white mb-8 -z-2 '>
             <div className='flex flex-row pl-4 w-1/2'> 
             <p className='text-2xl text-cyan-600 font-serif'>HOPE-</p>
            <p className='text-2xl text-black font-serif'>Shop</p>

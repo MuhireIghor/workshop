@@ -4,7 +4,7 @@ import Body from './Body';
 import Testimonials from './Testimonials';
 const Main2 = ()=>{
     return (
-        <main className="main">
+        <main className="main space-y-12">
 <Body/>
 <About/>
 <Testimonials title="Testimonial" />

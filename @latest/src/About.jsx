@@ -13,10 +13,10 @@ function About(){
         setAct(!act)
         console.log(act);
     }
-    const aboutRef = useNav('About us');
+    const aboutRef = useNav('Aboutus');
     return(
 
-    <section ref={aboutRef} id='aboutCont' className="about flex flex-row  w-screen">
+    <section ref={aboutRef} id='aboutCont' className="about flex flex-row h-screen w-screen">
         <div className="image w-1/2 h-1/2" >
                 <img src={pic} alt='Text' className=' full w-3/4 h-full pl-4 '/>
         </div>
