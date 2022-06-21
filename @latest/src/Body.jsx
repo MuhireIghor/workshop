@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNav } from './context/useNav';
 import{Swiper,SwiperSlide} from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -11,14 +12,11 @@ import Fade from 'react-reveal/Fade'
 import {data} from './Imageslider';
 
 console.log(data);
-const transitionTime = 400;
-const elastic = `transform ${transitionTime}ms cubic-bezier(0.68, -0.55, 0.265, 1.55)`;
-const smooth = `transform ${transitionTime}ms ease`;
 function Body(){
   
-
+	const bodyRef = useNav('Home');
     return(
-        <div className=' flex flex-col justify-center items-center    w-screen h-screen py-2  '>
+        <section ref={bodyRef} id='homeCont' className=' flex flex-col justify-center items-center    w-screen h-screen py-2  '>
   
                     
                 <Swiper className='swiper'  effect={"cube"}
@@ -32,10 +30,13 @@ function Body(){
           shadowOffset: 40,
           shadowScale: 0.94,
           autoplay:true,
+          loop:true,
+          
           
         }}
+        
         autoplay={{
-
+        
           delay:6000,
           disableOnInteraction:true,
           
@@ -109,7 +110,7 @@ function Body(){
 
 
 
-        </div>
+        </section>
     
     )
       }

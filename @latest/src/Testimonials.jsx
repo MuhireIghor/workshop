@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNav } from './context/useNav';
 import pic from './Images/status.jpg';
 const clients = [{
   name: 'Mr Easy',
@@ -31,8 +32,9 @@ for (let i = 0; i < clients.length; i++)
 
 
 function Testimonials({ title }) {
+  const testRef = useNav('Testimonials');
   return (
-    <div className=' mt-16 w-screen flex flex-col items-center justify-center space-y-8 '>
+    <section className=' mt-16 w-screen flex flex-col items-center justify-center space-y-8 ' ref={testRef} id='testCont'>
       <div className="header  text-xl text-[605C5C] ">
         {title}
       </div>
@@ -52,7 +54,7 @@ function Testimonials({ title }) {
       }
       </div>
 
-    </div>
+    </section>
   )
 }
 

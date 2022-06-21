@@ -1,26 +1,17 @@
 import React from 'react';
-import About from './About';
-import Body from './Body';
-import Navbar from './Navbar';
+import NavProvider from './context/NavContext';
+import Main2 from './Main2';
+import Nav from './Nav/Nav';
 import './App.css';
-import Testimonials from './Testimonials';
-function App(){
-    return(
-
-
+function App() {
+    return (
         <div className='flex flex-col space-y-12  w-screen'>
-            <Navbar rout="Home"/>
-            <Body />
-            <About />
-            <Testimonials title = "Testimonials" />
-    
-
-
-
-
-
+            <NavProvider>
+                <Nav />
+                <Main2 />
+            </NavProvider>
         </div>
-        
+
     )
 }
 export default App;

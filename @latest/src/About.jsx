@@ -1,18 +1,22 @@
 import React,{useState} from 'react';
-import pic from './Images/LOGO2.png'
+import pic from './Images/LOGO2.png';
+import { useNav } from './context/useNav';
+
 
 
 function About(){
     const [act,setAct] = useState(false);
+    
 
     const[text,setText] = useState('');
     const clickHandler = (e)=>{
         setAct(!act)
         console.log(act);
     }
+    const aboutRef = useNav('About us');
     return(
 
-    <div className="about flex flex-row  w-screen">
+    <section ref={aboutRef} id='aboutCont' className="about flex flex-row  w-screen">
         <div className="image w-1/2 h-1/2" >
                 <img src={pic} alt='Text' className=' full w-3/4 h-full pl-4 '/>
         </div>
@@ -46,7 +50,7 @@ act&&<div className={`more bg-gray-600 w-3/4 h-3/4 mt-4 -ml-24 `} >
 
 
 
-    </div>
+    </section>
     )
 }
 export default About;
