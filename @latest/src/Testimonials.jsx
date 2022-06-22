@@ -1,38 +1,21 @@
 import React from 'react';
 import { useNav } from './context/useNav';
 import pic from './Images/status.jpg';
-const clients = [{
-  name: 'Mr Easy',
-  text: `My name is ${igor} and I am really glad with the collaboration with the hope stores fashion centre and I really look forward to further working with the Hope fashions stores.`
-}, {
-  name: 'Mr Easy',
-  text: `My name is ${igor} and I am really glad with the collaboration with the hope stores fashion centre and I really look forward to further working with the Hope fashions stores.`
-}, {
-  name: 'Mr Easy',
-  text: `My name is ${igor} and I am really glad with the collaboration with the hope stores fashion centre and I really look forward to further working with the Hope fashions stores.`
-}, {
-  name: 'Mr Easy',
-  text: `My name is ${igor} and I am really glad with the collaboration with the hope stores fashion centre and I really look forward to further working with the Hope fashions stores.`
-}, {
-  name: 'Mr Easy',
-  text: `My name is ${igor} and I am really glad with the collaboration with the hope stores fashion centre and I really look forward to further working with the Hope fashions stores.`
-},
-{
-  name: 'Mr Easy',
-  text: `My name is ${igor} and I am really glad with the collaboration with the hope stores fashion centre and I really look forward to further working with the Hope fashions stores.`
-}
-];
-var igor;
-for (let i = 0; i < clients.length; i++)
-
-  setTimeout(() => {
-    igor = clients[i].name;
-    return (igor);
-  }, 3000);
-
 
 function Testimonials({ title }) {
   const testRef = useNav('Testimonials');
+  const names = ['Igor', 'Muhire', 'Mr Eazy', 'Davido','Chris Easy','Amalon'];
+  let [clients, setClients] = React.useState([]);
+
+  React.useEffect(() => {
+    for (let i = 0; i < names.length; i++) {
+      setClients([{
+        name: `${names[i]}`,
+        text: `My name is ${names[i]} and I am really glad with the collaboration with the hope stores fashion centre and I really look forward to further working with the Hope fashions stores.`
+      }, ...clients]) 
+    }
+  }, [])
+
   return (
     <section className=' mt-16 w-screen flex flex-col items-center justify-center space-y-8 ' ref={testRef} id='testCont'>
       <div className="header  text-2xl font-bold text-[605C5C] ">
