@@ -8,32 +8,32 @@ function Testimonials({ title }) {
   const clients = [{
 
     name:'Mr Easy',
-    Description:'My name is Mr Easy and I really had a reqarding ecperience with the Hope stores as they have quality and updated women fashion clothes'
+    text:'My name is Mr Easy and I really had a reqarding ecperience with the Hope stores as they have quality and updated women fashion clothes'
   },
   {
 
     name:'Ighor',
-    Description:'My name is Ighor and I really had a reqarding ecperience with the Hope stores as they have quality and updated women fashion clothes'
+    text:'My name is Ighor and I really had a reqarding ecperience with the Hope stores as they have quality and updated women fashion clothes'
   },
   {
 
     name:'Mr Easy',
-    Description:'My name is Mr Easy and I really had a reqarding ecperience with the Hope stores as they have quality and updated women fashion clothes'
+    text:'My name is Mr Easy and I really had a reqarding ecperience with the Hope stores as they have quality and updated women fashion clothes'
   },
   {
 
     name:'Davido',
-    Description:'My name is Davido and I really had a reqarding ecperience with the Hope stores as they have quality and updated women fashion clothes'
+    text:'My name is Davido and I really had a reqarding ecperience with the Hope stores as they have quality and updated women fashion clothes'
   },
   {
 
     name:'Chris',
-    Description:'My name is Chris and I really had a reqarding ecperience with the Hope stores as they have quality and updated women fashion clothes'
+    text:'My name is Chris and I really had a reqarding ecperience with the Hope stores as they have quality and updated women fashion clothes'
   },
   {
 
     name:'Brendan',
-    Description:'My name is Brendan and I really had a reqarding ecperience with the Hope stores as they have quality and updated women fashion clothes'
+    text:'My name is Brendan and I really had a reqarding ecperience with the Hope stores as they have quality and updated women fashion clothes'
   }
   ]
 
