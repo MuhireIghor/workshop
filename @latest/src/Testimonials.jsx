@@ -5,7 +5,7 @@ import pic from './Images/status.jpg';
 function Testimonials({ title }) {
   const testRef = useNav('Testimonials');
   const names = ['Igor', 'Muhire', 'Mr Eazy', 'Davido','Chris Easy','Amalon'];
-  const Clients = [{
+  const clients = [{
 
     name:'Mr Easy',
     Description:'My name is Mr Easy and I really had a reqarding ecperience with the Hope stores as they have quality and updated women fashion clothes'
