@@ -35,7 +35,7 @@ function Body() {
         loop={true}
 
       >
-        <SwiperSlide className='swiper-slide bg-[url("images/pic.jpg")] bg-contain bg-no-repeat bg-center bg-cover'>
+        <SwiperSlide className='swiper-slide bg-[url("Images/pic.jpg")] bg-contain bg-no-repeat bg-center bg-cover'>
           <Fade left duration={3000}>
             <div className="text flex flex-col" >
               <p className='text-white text-3xl font-semibold'>Hope Shop stores</p>
@@ -44,7 +44,7 @@ function Body() {
           </Fade>
         </SwiperSlide>
 
-        <SwiperSlide className='swipper-slide bg-[url("images/Ppic.jpg")] object-scale-down bg-center bg-contain'>
+        <SwiperSlide className='swipper-slide bg-[url("Images/Ppic.jpg")] object-scale-down bg-center bg-contain'>
           <Fade right duration={10000}>
             <div className="text flex flex-col w-1/2" >
               <p className='text-white text-3xl font-semibold'> Welcome on Hope Shop stores</p>
@@ -52,7 +52,7 @@ function Body() {
             </div>
           </Fade>
         </SwiperSlide>
-        <SwiperSlide className='swipper-slide bg-[url("images/pic2.jpg")]'>
+        <SwiperSlide className='swipper-slide bg-[url("Images/pic2.jpg")]'>
           <Fade duration={60000} >
             <div className="text flex flex-col w-1/2" >
               <p className='text-white text-3xl font-semibold'> Get Started with Hope Shop stores</p>

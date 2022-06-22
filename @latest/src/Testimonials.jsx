@@ -8,14 +8,13 @@ function Testimonials({ title }) {
   let [clients, setClients] = React.useState([]);
 
   React.useEffect(() => {
-    for (let i = 0; i < names.length; i++) {
-      setClients([{
+    for (var i = 0; i <names.length+2 ; i++) {
+      setClients([ ...clients,{
         name: `${names[i]}`,
         text: `My name is ${names[i]} and I am really glad with the collaboration with the hope stores fashion centre and I really look forward to further working with the Hope fashions stores.`
-      }, ...clients]) 
+      }]) 
     }
   }, [])
-
   return (
     <section className=' mt-16 w-screen flex flex-col items-center justify-center space-y-8 ' ref={testRef} id='testCont'>
       <div className="header  text-2xl font-bold text-[605C5C] ">
