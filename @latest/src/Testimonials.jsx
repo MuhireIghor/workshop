@@ -5,16 +5,38 @@ import pic from './Images/status.jpg';
 function Testimonials({ title }) {
   const testRef = useNav('Testimonials');
   const names = ['Igor', 'Muhire', 'Mr Eazy', 'Davido','Chris Easy','Amalon'];
-  let [clients, setClients] = React.useState([]);
+  const Clients = [{
 
-  React.useEffect(() => {
-    for (var i = 0; i <names.length+2 ; i++) {
-      setClients([ ...clients,{
-        name: `${names[i]}`,
-        text: `My name is ${names[i]} and I am really glad with the collaboration with the hope stores fashion centre and I really look forward to further working with the Hope fashions stores.`
-      }]) 
-    }
-  }, [])
+    name:'Mr Easy',
+    Description:'My name is Mr Easy and I really had a reqarding ecperience with the Hope stores as they have quality and updated women fashion clothes'
+  },
+  {
+
+    name:'Ighor',
+    Description:'My name is Ighor and I really had a reqarding ecperience with the Hope stores as they have quality and updated women fashion clothes'
+  },
+  {
+
+    name:'Mr Easy',
+    Description:'My name is Mr Easy and I really had a reqarding ecperience with the Hope stores as they have quality and updated women fashion clothes'
+  },
+  {
+
+    name:'Davido',
+    Description:'My name is Davido and I really had a reqarding ecperience with the Hope stores as they have quality and updated women fashion clothes'
+  },
+  {
+
+    name:'Chris',
+    Description:'My name is Chris and I really had a reqarding ecperience with the Hope stores as they have quality and updated women fashion clothes'
+  },
+  {
+
+    name:'Brendan',
+    Description:'My name is Brendan and I really had a reqarding ecperience with the Hope stores as they have quality and updated women fashion clothes'
+  }
+  ]
+
   return (
     <section className=' mt-16 w-screen flex flex-col items-center justify-center space-y-8 ' ref={testRef} id='testCont'>
       <div className="header  text-2xl font-bold text-[605C5C] ">
