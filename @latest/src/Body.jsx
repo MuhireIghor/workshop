@@ -56,7 +56,7 @@ function Body() {
           <Fade duration={60000} >
             <div className="text flex flex-col w-1/2" >
               <p className='text-white text-3xl font-semibold'> Get Started with Hope Shop stores</p>
-              <p className='text-white text-2xl font-lightweight'>Get started with out App</p>
+              <p className='text-white text-2xl font-lightweight'>Get started with out Appis</p>
             </div>
           </Fade>
         </SwiperSlide>
