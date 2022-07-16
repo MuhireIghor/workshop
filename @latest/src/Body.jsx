@@ -47,7 +47,7 @@ function Body() {
         <SwiperSlide className='swipper-slide bg-[url("Images/Ppic.jpg")] object-scale-down bg-center bg-contain'>
           <Fade right duration={10000}>
             <div className="text flex flex-col w-1/2" >
-              <p className='text-white text-3xl font-semibold'> Welcome on Hope Shop stores</p>
+              <p className='text-white text-3xl font-semibold'> Welcome on Hope Shop stores sisters</p>
               <p className='text-white text-2xl font-lightweight'>Get all dream Clothes and at a low Price only at HOPE STORES</p>
             </div>
           </Fade>
