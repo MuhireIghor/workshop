@@ -21,11 +21,11 @@ function Body() {
           shadowOffset: 90,
           shadowScale: 0.80,
           autoplay: true,
-          loop: true,
+          loop:Infinity,
         }}
         autoplay={{
           delay: 6000,
-          disableOnInteraction: true,
+          disableOnInteraction: false,
         }
         }
         pagination={{
@@ -35,11 +35,15 @@ function Body() {
         loop={true}
 
       >
-        <SwiperSlide className='swiper-slide bg-[url("Images/pic.jpg")] bg-contain bg-no-repeat bg-center bg-cover'>
-          <Fade left duration={3000}>
-            <div className="text flex flex-col" >
+        <SwiperSlide className='swiper-slide bg-[url("Images/pic.jpg")] bg-contain bg-no-repeat bg-center bg-cover space-3'>
+          <Fade down duration={3000}>
+            <div  >
               <p className='text-white text-3xl font-semibold'>Hope Shop stores</p>
-              <p className='text-white text-2xl font-lightweight'>Kwambara Neza kwawe Ni Ishema Ryacu</p>
+            </div>
+          </Fade>
+          <Fade bottom duration={6000}>
+            <div >
+              <p className='text-white text-2xl font-semibold'>Kwambara Neza kwawe Ni Ishema Ryacu</p>
             </div>
           </Fade>
         </SwiperSlide>
@@ -53,10 +57,10 @@ function Body() {
           </Fade>
         </SwiperSlide>
         <SwiperSlide className='swipper-slide bg-[url("Images/pic2.jpg")]'>
-          <Fade duration={60000} >
+          <Fade top duration={60000} >
             <div className="text flex flex-col w-1/2" >
-              <p className='text-white text-3xl font-semibold'> Get Started with Hope Shop stores</p>
-              <p className='text-white text-2xl font-lightweight'>Get started with out App</p>
+              <p className='text-white text-3xl font-bold'> Get Started with Hope Shop stores</p>
+              <p className='text-white text-2xl font-lightweight'>Get started with our App</p>
             </div>
           </Fade>
         </SwiperSlide>

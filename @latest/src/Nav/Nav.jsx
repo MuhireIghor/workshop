@@ -15,6 +15,10 @@ const Nav = () => {
                 {navLinks.map(({ navLinkId, scrollToId }, idx) => (
 				<NavLink key={idx} navLinkId={navLinkId} scrollToId={scrollToId}  />
 			))}
+
+
+
+                     
             
 </nav>
 

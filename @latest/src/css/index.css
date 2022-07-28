@@ -1,0 +1,6 @@
+@media only screen and(max-width:660px){
+    .testing    {
+        width:640px;
+        background-color: red;
+    }
+}

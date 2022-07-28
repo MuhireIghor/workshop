@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNav } from './context/useNav';
 import pic from './Images/status.jpg';
+import './css/index.css';
 
 function Testimonials({ title }) {
   const testRef = useNav('Testimonials');
@@ -38,7 +39,7 @@ function Testimonials({ title }) {
   ]
 
   return (
-    <section className=' mt-16 w-screen flex flex-col items-center justify-center space-y-8 ' ref={testRef} id='testCont'>
+    <section className=' mt-16 w-screen flex flex-col items-center justify-center space-y-8  ' ref={testRef} id='testCont'>
       <div className="header  text-2xl font-bold text-[605C5C] ">
         {title}
       </div>
@@ -48,7 +49,7 @@ function Testimonials({ title }) {
         clients.map((client, index) => {
           return (
 
-            <div key={index} className="clent h-full w-5/6  bg-white shadow-md shadow-gray-200  p-8 border-md  flex flex-col justify-around space-y-8">
+            <div key={index} className="testing h-full w-5/6  bg-white shadow-md shadow-gray-200  p-8 border-md  flex flex-col justify-around space-y-8">
               <div className="image"><img src={pic} alt="text" className='w-12 h-12 align-center rounded-full mx-28' /></div>
               <div className="phr text-black">{client.text}</div>
               <div className="tit text-black text-center">{client.name}</div>
