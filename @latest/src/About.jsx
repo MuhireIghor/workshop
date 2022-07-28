@@ -21,11 +21,11 @@ function About() {
                 <p className="main w-full">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad animi tempore quae enim, cum sint illo impedit dicta reiciendis nobis, sed, aliquid unde. Voluptas unde vitae voluptatem ut dolorum natus illo harum vel, mollitia, laudantium eaque accusantium et! Harum, voluptatibus.</p>
                 <div className="but w-1/2 flex flex-col items-center justify-center">
 
-                    <button className='w-1/2 border-2  bg-[blue] relative -left-20 mr-8  ' onClick={clickHandler}>Read more</button>
+                    <button className='w-1/2 border-2  bg-blue-300 relative -left-20 mr-8 border-2 border-blue-300 ' onClick={clickHandler}>Read more</button>
                     {
-                        act && <div className={`more bg-gray-600 w-3/4 h-3/4 mt-4 -ml-24 `} >
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore excepturi sunt optio nesciunt reprehenderit est nisi eos saepe maiores deleniti.
-                        </div>
+                        act && (<div className={`more w-3/4 h-full mt-2 -ml-24 border-2 border-gray-200  p-3`} >
+                            Lorem ipsum, dolor sit amet dhsdvdgdv consectetur adipisicing elit. Inventore excepturi sunt optio nesciunt reprehenderit est nisi eos saepe maiores deleniti.
+                        </div>)
                     }
                 </div>
             </div>
