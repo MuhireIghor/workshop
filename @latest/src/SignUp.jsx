@@ -10,7 +10,12 @@ const SignUp = () => {
         confPass:''
     
     });
-    const handleSign
+    const[user,setUser] = useState(false);
+    
+    const handleSignUp = (e)=>{
+        e.preventDefault();
+        setUser(true);
+    }
     const HandleChanges = (e)=>{
         setFormData({...formData,[e.target.name]:e.target.value});
         // console.log(e.target.value);
@@ -19,7 +24,7 @@ const SignUp = () => {
         e.preventDefault();
         console.log(formData);
     }
-    const user =false;
+const handleSignIn = ()=>{}
   return (
     <div >
         <div className='bg-indigo-100 border-2xl border-blue-200 rounded-sm mx-auto w-1/4 h-auto my-auto p-auto shadow-xl shadow-blue-200 '>
@@ -38,7 +43,7 @@ const SignUp = () => {
 </>
           
         )}
-<button  type='submit' className='bg-blue-200 rounded-sm font-medium py-2 mt-4 hover:bg-blue-400 hover:translate-y-2' onClick={user?handleSignUp:handleSignIn}>{user?'Log In':'Sign Up'}</button>
+<button  type='submit' className='bg-blue-200 rounded-sm font-medium py-2 mt-4 hover:bg-blue-400 hover:translate-y-2' onClick={user?handleSignIn:handleSignUp}>{user?'Log In':'Sign Up'}</button>
             </form>
         </div>
     </div>
