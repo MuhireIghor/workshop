@@ -1,4 +1,5 @@
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
+import { useNavigate } from 'react-router-dom';
 import Input from './Input';
 
 const SignUp = () => {
@@ -10,12 +11,14 @@ const SignUp = () => {
         confPass:''
     
     });
+    const navigate = useNavigate();
     const[user,setUser] = useState(false);
+   
     
-    const handleSignUp = (e)=>{
-        e.preventDefault();
-        setUser(true);
-    }
+            const handleSignUp = (e)=>{
+                e.preventDefault();
+                setUser(true);
+            }
     const HandleChanges = (e)=>{
         setFormData({...formData,[e.target.name]:e.target.value});
         // console.log(e.target.value);
@@ -24,7 +27,9 @@ const SignUp = () => {
         e.preventDefault();
         console.log(formData);
     }
-const handleSignIn = ()=>{}
+const handleSignIn = ()=>{
+    navigate('/');
+}
   return (
     <div >
         <div className='bg-indigo-100 border-2xl border-blue-200 rounded-sm mx-auto w-1/4 h-auto my-auto p-auto shadow-xl shadow-blue-200 '>
