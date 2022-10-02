@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useNav } from './context/useNav';
 import pic from './Images/status.jpg';
 import './css/index.css';
@@ -58,6 +59,7 @@ function Testimonials({ title }) {
         })
       }
       </div>
+      <Link to='/signup'><button className='bg-blue-200 rounded-sm px-2 outline-none'>Get Started</button></Link>
 
     </section>
   )
