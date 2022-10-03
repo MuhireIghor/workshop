@@ -1,6 +1,8 @@
 import React,{useState,useEffect} from 'react';
+import { useRecoilState } from 'recoil';
 import { useNavigate } from 'react-router-dom';
 import Input from './Input';
+import {user} from './atoms';
 
 const SignUp = () => {
     const[formData,setFormData] = useState({
@@ -12,12 +14,13 @@ const SignUp = () => {
     
     });
     const navigate = useNavigate();
-    const[user,setUser] = useState(false);
+    const [users,setUsers] = useRecoilState(user);
+
    
     
             const handleSignUp = (e)=>{
                 e.preventDefault();
-                setUser(true);
+                setUsers(true);
             }
     const HandleChanges = (e)=>{
         setFormData({...formData,[e.target.name]:e.target.value});
@@ -35,13 +38,13 @@ const handleSignIn = ()=>{
     <div >
         <div className='bg-indigo-100 mt-20 border-2xl border-blue-200 rounded-sm mx-auto w-1/4 h-auto my-auto p-auto shadow-xl shadow-blue-200 '>
 
-            <p className='text-xl text-black text-center mt-4 font-medium'>{user?'Login':'Sign Up'}</p>
+            <p className='text-xl text-black text-center mt-4 font-medium'>{users?'Login':'Sign Up'}</p>
             <form className='flex flex-col px-8 py-12 ' onSubmit={handleSubmit}>
 <Input name={'email'} type={'email'} label="Email"  handleChange={HandleChanges} />
 <Input name={'password'} type={'password'} label="Password" handleChange={HandleChanges} />
 
 
-        {!user&&(
+        {!users&&(
             <>
 <Input name={'firstName'} type={'text'} label="First Name" handleChange={HandleChanges} />
 <Input name={'lastName'} type={'text'} label="Last Name" handleChange = {HandleChanges} />
