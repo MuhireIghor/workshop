@@ -29,10 +29,11 @@ const SignUp = () => {
     }
 const handleSignIn = ()=>{
     navigate('/');
+    document.title = 'Welcome to Hope Stores';
 }
   return (
     <div >
-        <div className='bg-indigo-100 border-2xl border-blue-200 rounded-sm mx-auto w-1/4 h-auto my-auto p-auto shadow-xl shadow-blue-200 '>
+        <div className='bg-indigo-100 mt-20 border-2xl border-blue-200 rounded-sm mx-auto w-1/4 h-auto my-auto p-auto shadow-xl shadow-blue-200 '>
 
             <p className='text-xl text-black text-center mt-4 font-medium'>{user?'Login':'Sign Up'}</p>
             <form className='flex flex-col px-8 py-12 ' onSubmit={handleSubmit}>
