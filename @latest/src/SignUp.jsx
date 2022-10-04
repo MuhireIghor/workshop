@@ -21,6 +21,7 @@ const SignUp = () => {
             const handleSignUp = (e)=>{
                 e.preventDefault();
                 setUsers(true);
+                document.title='Login '
             }
     const HandleChanges = (e)=>{
         setFormData({...formData,[e.target.name]:e.target.value});
@@ -52,7 +53,7 @@ const handleSignIn = ()=>{
 </>
           
         )}
-<button  type='submit' className='bg-blue-200 rounded-sm font-medium py-2 mt-4 hover:bg-blue-400 hover:translate-y-2' onClick={user?handleSignIn:handleSignUp}>{user?'Log In':'Sign Up'}</button>
+<button  type='submit' className='bg-blue-200 rounded-sm font-medium py-2 mt-4 focus:bg-blue-400 focus:translate-y-2' onClick={users?handleSignIn:handleSignUp}>{users?'Log In':'Sign Up'}</button>
             </form>
         </div>
     </div>
