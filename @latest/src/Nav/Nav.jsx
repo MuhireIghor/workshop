@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import NavLink from './NavLink';
 import { navLinks } from './navLinks';
 import './Nav.css';
@@ -13,7 +14,9 @@ const Nav = () => {
           </div>
  <nav nav className='flex flex-row text-xl justify-end items-end justify-around space-x-2   w-1/2'>
                 {navLinks.map(({ navLinkId, scrollToId }, idx) => (
-				<NavLink key={idx} navLinkId={navLinkId} scrollToId={scrollToId}  />
+navLinkId === "Explore"?(
+<Link to='/explore'><NavLink key={idx} navLinkId={navLinkId} scrollToId={scrollToId} /></Link>
+                     ):(<Link to={'/'}><NavLink key={idx} navLinkId={navLinkId} scrollToId={scrollToId}  /></Link>)
 			))}
 
 

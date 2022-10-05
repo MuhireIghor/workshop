@@ -13,13 +13,10 @@ console.log(data);
 function Body() {
   const bodyRef = useNav('Home');
   return (
-    <section ref={bodyRef} id='homeCont' className=' flex flex-col justify-center items-center w-screen h-screen py-2  '>
+    <section ref={bodyRef} id='homeCont' className=' justify-center items-center h-[35rem] mt-4  relative z-12 '>
       <Swiper className='swiper' effect={"cube"}
         cubeEffect={{
-          shadow: true,
-          slideShadows: true,
-          shadowOffset: 90,
-          shadowScale: 0.80,
+          shadow: false,
           autoplay: true,
           loop:Infinity,
         }}

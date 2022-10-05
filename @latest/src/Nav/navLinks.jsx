@@ -1,1 +1,1 @@
-export const navLinks = [ {status:'Active',navLinkId:'Home',scrollToId:'homeCont'},{status:'Inactive',navLinkId:'About',scroolToId:'aboutCont'},{status:'Inactive',navLinkId:'Testimonials',scrollToId:'testCont'}];
+export const navLinks = [ {status:'Active',navLinkId:'Explore',scrollToId:'homeCont'},{status:'Inactive',navLinkId:'About',scroolToId:'aboutCont'},{status:'Inactive',navLinkId:'Testimonials',scrollToId:'testCont'}];

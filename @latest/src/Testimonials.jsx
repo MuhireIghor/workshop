@@ -39,7 +39,7 @@ function Testimonials({ title }) {
   ]
 
   return (
-    <section className=' mt-16 w-screen flex flex-col items-center justify-center space-y-8  ' ref={testRef} id='testCont'>
+    <section className='  w-screen flex flex-col items-center justify-center space-y-8  ' ref={testRef} id='testCont'>
       <div className="header  text-2xl font-bold text-[605C5C] ">
         {title}
       </div>
