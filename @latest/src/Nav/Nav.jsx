@@ -15,8 +15,8 @@ const Nav = () => {
  <nav nav className='flex flex-row text-xl justify-end items-end justify-around space-x-2   w-1/2'>
                 {navLinks.map(({ navLinkId, scrollToId }, idx) => (
 navLinkId === "Explore"?(
-<Link to='/explore'><NavLink key={idx} navLinkId={navLinkId} scrollToId={scrollToId} /></Link>
-                     ):(<Link to={'/'}><NavLink key={idx} navLinkId={navLinkId} scrollToId={scrollToId}  /></Link>)
+<Link className='border-none outline-none  hover:border-none' to='/explore'><NavLink key={idx} navLinkId={navLinkId} scrollToId={scrollToId} /></Link>
+                     ):(<Link className='border-none outline-none  hover:border-none' to={'/'}><NavLink key={idx} navLinkId={navLinkId} scrollToId={scrollToId}  /></Link>)
 			))}
 
 

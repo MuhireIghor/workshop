@@ -20,7 +20,7 @@ function About() {
       const clickEvent = document.addEventListener("mousedown", ()=>{
         if(!actContent.current.contains(event.target)) setAct(false)
       })
-      return () => document.removeEventListener("mousedown", clickEvent)
+      return () => document.removeEventListener("mousedown", clickEvent)    
     })
     
     return (
