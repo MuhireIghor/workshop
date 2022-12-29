@@ -2,7 +2,9 @@ import { Input } from 'postcss';
 import React, { useState, useEffect } from 'react';
 import { formatCurrency } from '../utils/currencyFormat';
 import InputField from './InputField';
-import '../css/sidebar.css'
+import '../css/sidebar.css';
+import {AiFillDelete} from 'react-icons/ai';
+import { AiOutlineSearch } from 'react-icons/ai';
 
 const SideBar = () => {
     const minimumP = 1000;
@@ -82,7 +84,7 @@ const SideBar = () => {
                         <button className='font-semibold 'disabled="false">Apply Filter</button>
                     </div>
                     <div className='flex items-center justify-center basis-2/12 '>
-                        <button className='bg-white rounded-full flex  w-12 h-12 border-[1px] border-[gray] ' disabled="false">Apply Filter</button>
+                        <button className='bg-white rounded-full flex items-center justify-center w-12 h-12 border-[1px] border-[gray] ' disabled="false"><AiFillDelete className='text-2xl'/> </button>
                     </div>
                   
                 </div>
