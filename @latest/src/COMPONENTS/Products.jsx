@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import { AiOutlineSearch } from 'react-icons/ai';
+
 
 const Products = () => {
     return (
@@ -10,15 +12,19 @@ const Products = () => {
             <div className='flex justify-between'>
                 {/* searchbox */}
                 <div className='basis-8/12 flex border-[1px] border-black '>
-                    <div className='basis-2/12 bg-[green] border-r-[1px] border-black '>
-                        
+                    <div className='basis-2/12 border-r-[1px] border-black flex items-center justify-center '>
+                       <AiOutlineSearch className='text-2xl text-[gray]' /> 
                     </div>
                     <div className='basis-10/12 bg-[red] border-black'>
                       <input type={'text'} placeholder="Search among 100+ products" className='w-full p-2 outline-none '/>
                     </div>
                 </div>
-                <div className='bg-[orange] basis-3/12'>
-hdhsjds
+                <div className='basis-3/12 '>
+<select className='w-full h-full p-2'>
+    <option >Popular</option>
+    <option >Popular</option>
+    <option >Popular</option>
+</select>
                 </div>
             </div>
         </div>

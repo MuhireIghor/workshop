@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "caniuse-lite": "^1.0.30001441",
     "react": "^18.0.0",
     "react-animations": "^1.0.0",
     "react-dom": "^18.0.0",

@@ -1,8 +1,8 @@
 import React,{useState,useEffect} from 'react';
-import { useRecoilState } from 'recoil';
+// import { useRecoilState } from 'recoil';
 import { useNavigate } from 'react-router-dom';
 import Input from './Input';
-import {user} from './atoms';
+// import {user} from './atoms';
 
 const SignUp = () => {
     const[formData,setFormData] = useState({
