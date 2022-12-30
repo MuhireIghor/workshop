@@ -7,11 +7,11 @@ import SideBar from './COMPONENTS/SideBar';
 const Explore = () => {
     
   return (
- <div className='flex h-screen'>
-  <div className='basis-2/12'>
+ <div className='flex h-screen relative'>
+  <div className='basis-2/12 fixed '>
 <SideBar />
   </div>
-  <div className='basis-9/12 mt-24'>
+  <div className='basis-9/12 ml-[350px] mt-24 -z-30 '>
 <Products />
   </div>
 

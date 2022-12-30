@@ -3,7 +3,12 @@ import React, { useState, useEffect } from 'react';
 import { formatCurrency } from '../utils/currencyFormat';
 import InputField from './InputField';
 import '../css/sidebar.css';
+<<<<<<< HEAD
 import {AiFillDelete} from  'react-icons/ai'
+=======
+import {AiFillDelete} from 'react-icons/ai';
+import { AiOutlineSearch } from 'react-icons/ai';
+>>>>>>> 79af5ec35291297b05f20d0910a5a1e057a31479
 
 const SideBar = () => {
     const minimumP = 1000;
@@ -83,7 +88,11 @@ const SideBar = () => {
                         <button className='font-semibold 'disabled="false">Apply Filter</button>
                     </div>
                     <div className='flex items-center justify-center basis-2/12 '>
+<<<<<<< HEAD
                         <button className='bg-white rounded-full flex  w-12 h-12 border-[1px] border-[gray] flex items-center justify-center' disabled="false"> <AiFillDelete className="text-2xl" /> </button>
+=======
+                        <button className='bg-white rounded-full flex items-center justify-center w-12 h-12 border-[1px] border-[gray] ' disabled="false"><AiFillDelete className='text-2xl'/> </button>
+>>>>>>> 79af5ec35291297b05f20d0910a5a1e057a31479
                     </div>
                   
                 </div>
